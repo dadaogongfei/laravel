@@ -1,8 +1,16 @@
 <?php
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){
-    Route::get('config/index', 'ConfigController@index');
-    Route::get('config/add', 'ConfigController@add');
-    Route::get('config/edit/{id}', 'ConfigController@edit');
-    Route::get('config/delete/{id}', 'ConfigController@delete');
-    Route::post('config/doPost', 'ConfigController@doPost');
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
 });
