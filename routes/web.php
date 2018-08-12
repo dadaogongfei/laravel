@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::any('/login','LoginController@index');
+Route::get('/user/index','UserController@index');
+Route::any('/user/add','UserController@addUser');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
