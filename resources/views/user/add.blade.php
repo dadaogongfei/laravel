@@ -20,15 +20,15 @@
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">用户名</label>
-                                    <input type="text" class="form-control" name="name" value="{{old['username']}}">
+                                    <input type="text" class="form-control" name="username" value="{{old('username')}}">
                                 </div>
                                  <div class="form-group">
                                     <label for="exampleInputEmail1">邮箱</label>
-                                    <input type="text" class="form-control" name="email" value="{{old['email']}}">
+                                    <input type="text" class="form-control" name="email" value="{{old('email')}}">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">密码</label>
-                                    <input type="password" class="form-control" placeholder="Password" name="password" value="{{old['password']}}">
+                                    <input type="password" class="form-control" placeholder="Password" name="password" value="{{old('password')}}">
                                 </div>
                             </div>
                             <!-- /.box-body -->

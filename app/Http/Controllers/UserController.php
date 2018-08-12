@@ -32,10 +32,10 @@ class UserController extends Controller
             if ($validator->fails()) {
                 return redirect()->back()
                 ->withErrors($validator)
-                ->withInput($request);
+                ->withInput($request->all());
             }
             $user = new User();
-            $data['username']=$request->post('name');
+            $data['username']=$request->post('username');
             $data['password']=bcrypt($request->post('password'));
             $data['email']=$request->post('email');
             if($user->create($data)){
