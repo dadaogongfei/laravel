@@ -2,6 +2,7 @@
 
 @section("content")
     <!-- Main content -->
+@include('layout.error')
     <section class="content">
         <!-- Small boxes (Stat box) -->
         <div class="row">
